@@ -1,0 +1,26 @@
+Register No,Student Name,Gender,Standard,Father Name,Mother Name,Parent's Occupation(Father),Maths ,Science ,English ,Kannada ,Social Science,Hindi ,Attendence,Pratice Sport,Cultural Activity(Y/N),Height,Weight
+1,Abhishek p,Male,10,Prakash, Akkamma ,Teacher,55,70,85,95,75,80,75,R,Y,156,45
+2,Bhomi H,Female,10,Hanumantha, Ammaji ,Farmer,80,95,92,80,90,85,80,S,Y,180,55
+3,Chandana N,Female,10,Narendra,Ambavva ,Bussineman,60,63,78,69,56,56,70,N,N,160,60
+4,Deeksha M,Female,10,Mahesh,Anasuya ,Docter,91,69,95,85,75,89,90,S,Y,130,61
+5,Gagan n,Male,10,Nagesh, Parvathamma, Engineer,35,74,88,70,56,45,65,R,N,175,54
+6,Gagana D,Female,10,Deepak, Pushpavva, Doctor,89,75,76,89,58,89,89,N,Y,155,30
+7,Gayathri S,Female,10,Shekhar, Radhamma, Teacher,75,60,90,65,58,62,50,R,N,165,29
+8,Kavitha KG,Female,10,Karibasappa,Ratnamma, Lawyer,70,89,82,75,96,48,85,N,N,151,55
+9,Keerthi L,Female,10,Lokesh, Svithramma, Businessman,80,75,98,84,77,75,65,N,Y,154,51
+10,Kiran B,Male,10,Birappa, Seethamma , Farmer,65,80,75,63,85,82,76,R,N,166,77
+11,Lohith B,Male,10,Balappa, Shanthamm, Police Officer,56,75,50,48,69,94,65,R,Y,189,41
+12,Mohan A,Male,10,Anand,Radha,Soldier,62,40,65,59,75,75,75,S,N,155,29
+13,Nikitha A,Female,10,Anil,Uma, Scientist,54,50,75,79,65,85,80,N,Y,182,52
+14,Nikitha R,Female,10,Ramesh,Yashoda, Artist,56,75,89,85,95,75,95,R,Y,175,55
+15,Pavan S,Male,10,Somshekhar,Kavitha,Nurse,86,92,85,78,45,69,77,R,N,145,54
+16,Praveen T,Male,10,Tirtakumar,Anitha, Doctor,96,75,75,95,92,84,75,N,Y,152,62
+17,Rajesh V,Male,10,Veeresh,Sunitha,Teacher,25,63,50,66,50,65,40,S,N,156,61
+18,Ravi H,Male,10,Halesh,Mohini, Social Worker,87,82,90,79,84,52,72,S,Y,180,68
+19,Sadhana S,Female,10,Shekhar,Danamma,Counselor,69,77,58,48,69,35,72,R,N,184,62
+20,Sahana R,Female,10,Ramesh,Tara,Therapist,70,69,58,69,75,67,85,N,N,152,65
+21,Sanjana B,Female,10,Bairava,Sita, Police Officer,89,95,90,92,48,84,95,S,Y,157,87
+22,Shekhar D,Male,10,Dondabhovi,Vanitha, Firefighter,54,60,58,55,79,77,79,N,Y,184,50
+23,Soundarya S,Female,10,Sunil,Kavitha, Paramedic,80,75,85,90,88,91,98,R,N,175,58
+24,Yashwath A,Male,10,Aravind,Chandramma, Hospitality Manager,78,65,75,59,81,89,76,S,Y,160,60
+25,Yogesh Y,Male,10,Yalappa,Savitha,Attender,86,84,95,55,56,88,65,S,N,190,70
