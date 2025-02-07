@@ -1,17 +1,140 @@
-A student result analysis
+import numpy as np
 
-1. *Data Import*: Importing student data from a file (e.g., CSV, Excel)
-2. *Data Cleaning*: Handling missing values, data normalization, and formatting
-3. *Data Analysis*: Calculating statistics (e.g., mean, median, mode) and visualizing results (e.g., plots, charts)
-4. *Student Performance*: Analyzing individual student performance, including grades, scores, and rankings
-5. *Subject-wise Analysis*: Analyzing performance in specific subjects, including average scores and grade distributions
-6. *Comparison Analysis*: Comparing performance across different classes, sections, or years
-7. Visualization: Using libraries like Matplotlib, Seaborn, or Plotly to create interactive visualizations
-8. Insights and Recommendations: Providing insights and recommendations for improvement based on the analysis
+import pandas as pd
 
-Some potential Python libraries used in such a project include:
+import matplotlib.pyplot as plt
 
-1. Pandas for data manipulation and analysis
-2. NumPy for numerical computations
-3. Matplotlib and Seaborn for data visualization
-4. Scikit-learn for machine learning and predictive modeling.
+import seaborn as sns
+
+
+
+df=pd.read_csv("C:\\sadhana s\\student_data.csv")
+
+pd.set_option('display.max_rows',None)
+
+pd.set_option('display.max_columns',None)
+
+pd.set_option('display.width',None)
+
+pd.set_option('display.max_colwidth',None)
+
+#display all data
+
+print(df)
+
+print(df.describe())
+
+print(df.head())
+
+print(df.tail())
+
+print(df.info())
+
+print(df.isnull().sum())
+
+# Drop unnamed column
+
+df=df.drop("Height",axis=1)
+
+print(df.head())
+
+
+
+# Get the column names
+
+columns_to_find = ['Maths', 'Science', 'English', 'Kannada', 'Social Science', 'Hindi']
+
+existing_columns = {}
+
+
+
+for column in columns_to_find:
+
+    matching_columns = [col for col in df.columns if column.lower() in col.lower()]
+
+    if matching_columns:
+
+        existing_columns[column] = matching_columns[0]
+
+    else:
+
+        print(f"Column '{column}' not found.")
+
+
+
+# Calculate the total marks
+
+total_marks_columns = [existing_columns[col] for col in existing_columns]
+
+df['Total Marks'] = df[total_marks_columns].sum(axis=1)
+
+
+
+# Print the column names
+
+print(df.columns)
+
+
+
+# Display the 'Total Marks' column
+
+print(df['Total Marks'])
+
+#Calculate the average for Total marks
+
+average=(df['Total Marks']/6)
+
+#display the 'average'column
+
+print(average)
+
+#create a gender plot
+
+plt.figure(figsize=(4,5))
+
+ax=sns.countplot(data=df,x="Gender")
+
+ax.bar_label(ax.containers[0])
+
+plt.show()
+
+print(df["Pratice Sport"].unique())
+
+R=df.loc[(df['Pratice Sport']=="R")].count()
+
+N=df.loc[(df['Pratice Sport']=="N")].count()
+
+S=df.loc[(df['Pratice Sport']=="S")].count()
+
+l=["R","N","S"]
+
+colors=['red','blue','green']
+
+mlist=[R["Pratice Sport"],N["Pratice Sport"],S["Pratice Sport"]]
+
+plt.pie(mlist,labels=l,autopct= "%1.2f%%",colors=colors)
+
+plt.title('Pratice Sport')
+
+plt.show()
+
+Column=df['Weight']
+
+print(Column)
+
+sns.heatmap(Column.values.reshape(1,-1),annot=True,cmap='coolwarm',square=True)
+
+plt.show()
+
+
+
+
+
+
+
+
+
+
+
+
+
